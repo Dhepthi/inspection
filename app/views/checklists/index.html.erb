@@ -1,0 +1,10 @@
+
+<div id="checklists"></div>
+
+<script type="text/javascript">
+  $(function() {
+    window.router = new Myapp.Routers.ChecklistsRouter({checklists: <%= @checklists.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>
+
